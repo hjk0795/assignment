@@ -1,3 +1,49 @@
 .App {
-    text-align: center;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.tableContainer {
+  margin-left: 10rem;
+  margin-right: 10rem;
+}
+
+.table {
+  border: solid 1px #f0f0f0;
+}
+
+.alert {
+  width: 300px;
+  margin-bottom: 10px;
+}
+
+.search {
+  display: block;
+  width: 300px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 1350px) {
+  .tableContainer {
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .tableContainer {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .search,
+  .alert {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    margin-bottom: 5px;
+  }
 }
